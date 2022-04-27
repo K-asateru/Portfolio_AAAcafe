@@ -9,6 +9,7 @@ a {
   text-decoration: none;
   color: #333;
 }
+/* ヘッダー */
 .header_top {
   padding: 10px 0px 10px 0px;
   background: #800000;
@@ -58,30 +59,17 @@ nav a:hover {
   display: inline-block;
   width: 100%;
   height: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
-.container .container_service .menu_block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
-}
+/* コンテンツ */
 .container_service .service {
   width: 380px;
   text-align: center;
 }
+/* お店の紹介 */
 #concept {
   text-align: center;
-  margin-bottom: 100px;
-}
-#menu {
-  margin-bottom: 100px;
-}
-.container_service h2 {
-  text-align: center;
-  font-weight: bold;
-  font-size: 35px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 #concept img {
   display: inline-block;
@@ -89,6 +77,40 @@ nav a:hover {
 #concept p {
   font-size: 20px;
   margin-top: 60px;
+  line-height: 0px;
+}
+/* トピックス */
+#topics {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.topics_block {
+  display: flex;
+  justify-content: space-between;
+}
+.topics_aria img {
+  width: 380px;
+  height: 300px;
+  margin-bottom: 15px;
+}
+.topics_aria .txt {
+  text-align: left;
+}
+/* メニュー */
+#menu {
+  margin-bottom: 150px;
+}
+.container .container_service .menu_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.container_service h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 .container_service .service img {
   margin-bottom: 20px;
@@ -104,6 +126,7 @@ nav a:hover {
   list-style: inside;
   text-align: left;
 }
+/* アクセス */
 #access {
   text-align: center;
   margin-bottom: 100px;
@@ -132,6 +155,7 @@ nav a:hover {
   display: block;
   clear: both;
 }
+/* 問い合わせ */
 #access_reserve {
   text-align: center;
   margin-top: 100px;
@@ -139,6 +163,7 @@ nav a:hover {
   font-size: 30px;
   line-height: 1.5em;
 }
+/* フッター */
 footer {
   margin-top: 40px;
 }

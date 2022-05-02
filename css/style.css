@@ -1,14 +1,20 @@
 @charset "utf-8";
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ　Ｐ明朝", "ＭＳ　明朝", sans-serif;
   font-size: 15px;
-  line-height: 1.5em;
+  line-height: 1.3em;
 }
-a {
-  text-decoration: none;
-  color: #333;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
 /* ヘッダー */
 .header_top {
   padding: 10px 0px 10px 0px;
@@ -17,7 +23,7 @@ a {
 }
 .logo {
   float: left;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .logo img {
   display: inline-block;
@@ -27,16 +33,18 @@ a {
 }
 .site_reserve{
   text-align: right;
-  padding-right: 15px;
+  padding-right: 30px;
 }
-.w_inner {
-  width: 1200px;
-  margin: 0 auto;
+.clearlist {
+  content: "";
+  display: block;
+  clear: both;
 }
 nav ul {
   display: flex;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  list-style: none;
 }
 nav ul li {
   width: 200px;
@@ -47,6 +55,8 @@ nav ul li:first-child {
   border-left: 1px solid #ddd;
 }
 nav ul li a {
+  text-decoration: none;
+  color: #333;
   display: block;
 }
 nav a:hover {
@@ -61,68 +71,78 @@ nav a:hover {
   height: 400px;
   margin-bottom: 100px;
 }
-/* コンテンツ */
-.container_service .service {
-  width: 380px;
-  text-align: center;
-}
 /* お店の紹介 */
 #concept {
   text-align: center;
   margin-bottom: 150px;
 }
-#concept img {
-  display: inline-block;
+h2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 60px;
 }
 #concept p {
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 80px;
   line-height: 0px;
 }
 /* トピックス */
 #topics {
-  text-align: center;
   margin-bottom: 150px;
+}
+#topics .container h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 60px;
 }
 .topics_block {
   display: flex;
   justify-content: space-between;
 }
-.topics_aria img {
-  width: 380px;
-  height: 300px;
+.topics_box {
+  width: 100%;
+}
+.topics_box img {
+  width: 90%;
+  height: 250px;
   margin-bottom: 15px;
 }
-.topics_aria .txt {
-  text-align: left;
+.topics_box .txt ul {
+  list-style: inside;
+}
+.topics_box .txt ul li {
+  list-style: none;
 }
 /* メニュー */
 #menu {
   margin-bottom: 150px;
 }
-.container .container_service .menu_block {
+.menu_block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
 }
-.container_service h2 {
+#menu h2 {
   text-align: center;
   font-weight: bold;
   font-size: 35px;
-  margin-top: 20px;
   margin-bottom: 60px;
 }
-.container_service .service img {
-  margin-bottom: 20px;
-  width: 380px;
-  height: 300px;
+.menu_box {
+  width: 100%;
 }
-.container_service .service .ttl {
+.menu_box img {
+  width: 90%;
+  height: 250px;
+  margin-bottom: 20px;
+}
+.menu_box .ttl {
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
 }
-.service ul {
+.menu_box ul {
   list-style: inside;
   text-align: left;
 }
@@ -174,3 +194,113 @@ footer {
   font-size: 12px;
   padding: 7px 0 3px;
 }
+
+@media only screen and (max-width: 680px) {
+  .wrap {
+    overflow: hidden;
+  }
+  .container {
+    margin: 0 auto;
+    margin: 0 10px;
+  }
+  .logo {
+    float: none;
+  }
+  .site_reserve {
+    text-align: center;
+    width: 100%;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+  }
+  nav a {
+    font-size: 0.8em;
+  }
+  .header_img img {
+    height: 200px;
+    width: 100%;
+    margin-bottom: 80px;
+  }
+
+  /* お店の紹介 */
+  #concept {
+    margin-bottom: 80px;
+  }
+  #concept .container p {
+    font-size: 0.8em;
+  }
+  .container h2 {
+    font-size: 1.5em;
+  }
+
+  /* トピックス */
+  #topics {
+    margin-bottom: 80px;
+  }
+  #topics .container h2 {
+    font-size: 1.5em;
+  }
+  .topics_block {
+    display: block;
+    width: 100%;
+    /* text-align: center; */
+  }
+  .topics_box {
+    margin-bottom: 50px;
+  }
+  .topics_box img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+  .topics_box ul {
+    margin: 0 10px;
+  }
+
+  /* メニュー */
+  #menu {
+    margin-bottom: 80px;
+  }
+  #menu .container h2 {
+    font-size: 1.5em;
+  }
+  .menu_block {
+    display: block;
+    width: 100%;
+    /* margin: 0 10px 30px 10px; */
+  }
+  .menu_box {
+    margin-bottom: 50px;
+  }
+  .menu_box img {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+  }
+
+  .menu_box ul {
+    margin: 0 10px;
+  }
+
+  /* アクセス */
+  #access .container h2 {
+    font-size: 1.5em;
+  }
+  #access_map {
+    display: block;
+    width: 100%;
+    height: 270px;
+    margin-bottom: 150px;
+  }
+  #access iframe {
+    width: 100%;
+  }
+  #access_txt {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  #access_txt p {
+    text-align: left;
+  }
+}
+

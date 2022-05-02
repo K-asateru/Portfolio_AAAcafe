@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header class="header w_inner">
+  <div class="wrap">
+  <header>
     <div class="header_top">
       <div class="logo">
         <img src="img/logo.svg" alt="cafe">
@@ -20,63 +20,77 @@
         <p>ご予約用電話番号</p>
         <p class="site_tel">TEL:000-000-0000</p>
       </div>
+      <div class="clearlist"></div>
     </div>
     <nav>
-      <ul>
-        <li><a href="#">トップ</a></li>
-        <li><a href="#concept">お店の紹介</a></li>
-        <li><a href="#topics">トピックス</a></li>
-        <li><a href="#menu">メニュー</a></li>
-        <li><a href="#access">アクセス</a></li>
-        <li><a href="#access_reserve">お問合わせ</a></li>
-      </ul>
+      <div class="container">
+        <ul>
+          <li><a href="#">トップ</a></li>
+          <li><a href="#concept">お店の紹介</a></li>
+          <li><a href="#topics">トピックス</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#access">アクセス</a></li>
+          <li><a href="#access_reserve">お問合わせ</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-  <div class="container w_inner">
-    <div class="header_img">
+  <main>
+    <section class="header_img">
       <img src="img/header.JPG" alt="">
-    </div>
-    <div class="container_service">
-      <section id="concept">
-        <div class="container">
-          <h2>当店の紹介</h2>
-          <img id="concept_icon" src="img/titled.png">
-          <p>こだわり抜いたのコーヒー豆を使用</p>
-          <p>おいしさ際立つ製法での当店自慢の一杯をご堪能下さい</p>
-        </div>
-      </section>
-      <section id="topics">
+    </section>
+
+    <section id="concept">
+      <div class="container">
+        <h2>当店の紹介</h2>
+        <img id="concept_icon" src="img/titled.png">
+        <p>こだわり抜いたのコーヒー豆を使用</p>
+        <p>おいしさ際立つ製法での当店自慢の一杯をご堪能下さい</p>
+      </div>
+    </section>
+
+    <section id="topics">
+      <div class="container">
         <h2>トピックス</h2>
         <div class="topics_block">
-          <div class="topics_aria">
+          <div class="topics_box">
             <img src="img/topics1.jpg" alt="トピックス1">
             <div class="txt">
-              <p>2022/4/1</p>
-              <p>北谷町に新店舗オープン！！</p>
+              <ul>
+                <li>2022/4/1</li>
+                <li>北谷町に新店舗オープン！！</li>
+              </ul>
             </div>
           </div>
-          <div class="topics_aria">
+          <div class="topics_box">
             <img src="img/topics2.jpg" alt="トピックス2">
             <div class="txt">
-              <p>2022/2/14</p>
-              <p>今年のデザート新商品！！</p>
+              <ul>
+                <li>2022/2/14</li>
+                <li>今年のデザート新商品！！</li>
+              </ul>
             </div>
           </div>
-          <div class="topics_aria">
+          <div class="topics_box">
             <img src="img/topics3.jpg" alt="トピックス3">
             <div class="txt">
-              <p>2022/3/18</p>
-              <p>今月3/24、3/25のクーポン！</p>
-              <p>限定割引メニューを来店の際にご確認下さい！</p>
+              <ul>
+                <li>2022/3/18</li>
+                <li>今月3/24、3/25のクーポン！</li>
+                <li>限定割引メニューを来店の際にご確認下さい！</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-      <section id="menu">
-        <h2>メニュー</h2>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="container">
+        <h2 class="heading">メニュー</h2>
         <div class="menu_block">
-          <div class="service">
+          <div class="menu_box">
             <img src="img/service1.jpeg" alt="サービス1">
             <div class="ttl">ドリンク</div>
             <ul>
@@ -86,7 +100,7 @@
               <li>紅茶</li>
             </ul>
           </div>
-          <div class="service">
+          <div class="menu_box">
             <img src="img/service3.jpg" alt="サービス2">
             <div class="ttl">フード</div>
             <ul>
@@ -96,7 +110,7 @@
               <li>ベーコンとほうれん草のクリームパスタ</li>
             </ul>
           </div>
-          <div class="service">
+          <div class="menu_box">
             <img src="img/service2.jpg" alt="サービス3">
             <div class="ttl">デザート</div>
             <ul>
@@ -107,10 +121,12 @@
             </ul>
           </div>
         </div>
-      </section>
-    </div>
-    <div id="access">
-      <h2>アクセス</h2>
+      </div>
+    </section>
+
+    <section id="access">
+      <div class="container">
+        <h2 class="heading">アクセス</h2>
         <div id="access_map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3576.177239665534!2d127.81786403411559!3d26.320759722364055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1650934226650!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
@@ -125,14 +141,15 @@
           <p>ご予約用電話番号</p>
           <p class="site_tel">TEL:000-000-0000</p>
         </div>
-    </div>
-  </div>
+      </div>
+    </section>
+  </main>
 
-  <footer class="w_inner">
+  <footer>
     <div class="copy">
       &copy;2022.4.25
     </div>
   </footer>
-
+</div>
 </body>
 </html>
